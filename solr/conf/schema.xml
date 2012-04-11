@@ -512,7 +512,7 @@
    -->
 
 	<!--  Starbox -->
-	<field name="namn" type="string" indexed="true" stored="true"/>
+	<field name="name" type="string" indexed="true" stored="true"/>
 	<field name="url" type="string" indexed="true" stored="true"/>
 	<field name="doctype" type="string" indexed="true" stored="true"/>
 	<!-- Uncommenting the following will create a "timestamp" field using
@@ -623,7 +623,7 @@
  <uniqueKey>id</uniqueKey>
 
  <!-- field for the QueryParser to use when an explicit fieldname is absent -->
- <defaultSearchField>namn</defaultSearchField>
+ <defaultSearchField>name</defaultSearchField>
 
  <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
  <solrQueryParser defaultOperator="OR"/>
