@@ -511,15 +511,17 @@
        when adding a document.
    -->
 
+	<!--  Starbox -->
 	<field name="namn" type="string" indexed="true" stored="true"/>
 	<field name="url" type="string" indexed="true" stored="true"/>
 	<field name="doctype" type="string" indexed="true" stored="true"/>
 	<!-- Uncommenting the following will create a "timestamp" field using
 		 a default value of "NOW" to indicate when each document was indexed.
+	<field name="timeStamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
 	-->
-	<field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
-	<field name="fileSize" type="float" indexed="true" stored="true"/>
-    <field name="id" type="uuid" indexed="true" stored="true" required="true" /> 
+	<field name="timeStamp" type="string" indexed="true" stored="true"/>
+	<field name="fileSize" type="string" indexed="true" stored="true"/>
+    <field name="id" type="uuid" indexed="true" stored="true" required="false" /> 
     
 <!--    <field name="sku" type="text_en_splitting_tight" indexed="true" stored="true" omitNorms="true"/> -->
 <!--    <field name="name" type="text_general" indexed="true" stored="true"/> -->
