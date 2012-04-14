@@ -23,7 +23,6 @@
   sharedLib: path to a lib directory that will be shared across all cores
 -->
 <solr persistent="true">
-
   <!--
   adminPath: RequestHandler path to manage cores.  
     If 'null' (or absent), cores will not be manageable via request handler
