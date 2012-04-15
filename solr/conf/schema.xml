@@ -76,6 +76,17 @@
     <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true" omitNorms="true"/>
     <!--Binary data type. The data should be sent/retrieved in as Base64 encoded Strings -->
     <fieldtype name="binary" class="solr.BinaryField"/>
+    
+	<fieldtype name="text" class="solr.TextField">
+	 <analyzer>
+	   <charFilter class="solr.HTMLStripCharFilterFactory"/>
+	   <charFilter class="solr.MappingCharFilterFactory" mapping="mapping-ISOLatin1Accent.txt"/>
+	   <tokenizer class="solr.StandardTokenizerFactory"/>
+	   <filter class="solr.LowerCaseFilterFactory"/>
+	   <filter class="solr.StopFilterFactory"/>
+	   <filter class="solr.PorterStemFilterFactory"/>
+	 </analyzer>
+	</fieldtype>
 
     <!-- The optional sortMissingLast and sortMissingFirst attributes are
          currently supported on types that are sorted internally as strings
@@ -511,8 +522,8 @@
        when adding a document.
    -->
 
-	<!--  Starbox -->
-	<field name="name" type="string" indexed="true" stored="true"/>
+	<!--  Starbox starbox -->
+	<field name="name" type="text_general" indexed="true" stored="true"/>
 	<field name="url" type="string" indexed="true" stored="true"/>
 	<field name="doctype" type="string" indexed="true" stored="true"/>
 	<!-- Uncommenting the following will create a "timestamp" field using
