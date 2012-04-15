@@ -35,8 +35,8 @@
    -->
     <env-entry>
        <env-entry-name>solr/home</env-entry-name>
-       <!--  Den här bör vara relativ, men får det inte att fungera //Kim -->
-       <env-entry-value>C:/Users/Kim/workspace/starbox-solr-server/solr/</env-entry-value>
+       <!--  Den här pathen bör vara relativ, men jag får det inte att fungera //Kim -->
+       <env-entry-value>C:/Starbox-Solr/solr</env-entry-value>
        <env-entry-type>java.lang.String</env-entry-type>
     </env-entry>
    
