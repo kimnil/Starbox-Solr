@@ -525,7 +525,7 @@
 	<!--  Starbox starbox -->
 	<field name="name" type="text_general" indexed="true" stored="true"/>
 	<field name="url" type="string" indexed="true" stored="true"/>
-	<field name="doctype" type="string" indexed="true" stored="true"/>
+	<field name="docType" type="string" indexed="true" stored="true"/>
 	<!-- Uncommenting the following will create a "timestamp" field using
 		 a default value of "NOW" to indicate when each document was indexed.
 	<field name="timeStamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
