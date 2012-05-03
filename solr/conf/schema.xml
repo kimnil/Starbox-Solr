@@ -552,8 +552,8 @@
 
 	<!--  Starbox starbox -->
 	<field name="name" type="ibm_text" indexed="true" stored="true"/>
-	<field name="username" type="string" indexed="true" stored="true"/>
-	<field name="url" type="string" indexed="true" stored="true"/>
+	<field name="username" type="ibm_text" indexed="true" stored="true"/>
+	<field name="url" type="ibm_text" indexed="true" stored="true"/>
 	<field name="filetype" type="string" indexed="true" stored="true"/>
 	<!-- Uncommenting the following will create a "timestamp" field using
 		 a default value of "NOW" to indicate when each document was indexed.
