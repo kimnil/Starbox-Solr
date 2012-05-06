@@ -551,6 +551,7 @@
    -->
 
 	<!--  Starbox starbox -->
+	<field name="search_field" multiValued="true" type="ibm_text" indexed="true" stored="true"/>
 	<field name="name" type="ibm_text" indexed="true" stored="true"/>
 	<field name="username" type="ibm_text" indexed="true" stored="true"/>
 	<field name="url" type="ibm_text" indexed="true" stored="true"/>
@@ -663,7 +664,7 @@
  <uniqueKey>id</uniqueKey>
 
  <!-- field for the QueryParser to use when an explicit fieldname is absent -->
- <defaultSearchField>name</defaultSearchField>
+ <defaultSearchField>search_field</defaultSearchField>
 
  <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
  <solrQueryParser defaultOperator="OR"/>
@@ -672,6 +673,9 @@
         is added to the index.  It's used either to index the same field differently,
         or to add multiple fields to the same field for easier/faster searching.  -->
 
+ <copyField source="name" dest="search_field"/>
+ <copyField source="url" dest="search_field"/>
+ <copyField source="username" dest="search_field"/>
 <!--    <copyField source="cat" dest="text"/> -->
 <!--    <copyField source="name" dest="text"/> -->
 <!--    <copyField source="manu" dest="text"/> -->
