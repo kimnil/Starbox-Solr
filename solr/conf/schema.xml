@@ -562,7 +562,7 @@
 	<field name="timeStamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
 	-->
 	<field name="timestamp" type="string" indexed="true" stored="true"/>
-	
+
 	<field name="filesize" type="string" indexed="true" stored="true"/>
     <field name="id" type="uuid" indexed="true" stored="true" required="false" /> 
     

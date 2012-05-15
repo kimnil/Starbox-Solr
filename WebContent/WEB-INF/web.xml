@@ -39,6 +39,7 @@
        <!-- <env-entry-value>/Users/otto/Sites/Starbox-Solr/solr</env-entry-value> -->
        <env-entry-value>E:\KTH\Starbox-Solr\solr</env-entry-value>
        <!-- <env-entry-value>C:/Users/Kim/workspace/starbox-solr-server/solr</env-entry-value> -->
+
        <env-entry-type>java.lang.String</env-entry-type>
     </env-entry>
    
