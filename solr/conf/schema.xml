@@ -555,12 +555,14 @@
 	<field name="name" type="ibm_text" indexed="true" stored="true"/>
 	<field name="username" type="ibm_text" indexed="true" stored="true"/>
 	<field name="url" type="ibm_text" indexed="true" stored="true"/>
+	<field name="text" type="ibm_text" indexed="true" stored="true" required="false"/>
 	<field name="filetype" type="string" indexed="true" stored="true"/>
 	<!-- Uncommenting the following will create a "timestamp" field using
 		 a default value of "NOW" to indicate when each document was indexed.
 	<field name="timeStamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
 	-->
 	<field name="timestamp" type="string" indexed="true" stored="true"/>
+	
 	<field name="filesize" type="string" indexed="true" stored="true"/>
     <field name="id" type="uuid" indexed="true" stored="true" required="false" /> 
     
@@ -676,6 +678,8 @@
  <copyField source="name" dest="search_field"/>
  <copyField source="url" dest="search_field"/>
  <copyField source="username" dest="search_field"/>
+  <copyField source="text" dest="search_field"/>
+ 
 <!--    <copyField source="cat" dest="text"/> -->
 <!--    <copyField source="name" dest="text"/> -->
 <!--    <copyField source="manu" dest="text"/> -->
